@@ -1,0 +1,111 @@
+/* STARTUP5 MAIN STYLESHEET */
+
+/* LOGO */
+
+  .site-logo {
+    float:left;
+    margin: 10px 10px 0 0;
+  }
+
+  .top-bar {
+    .name h1{
+      float:left;
+    }
+    .site-logo {
+      float:left;
+      margin: 5px;
+      max-height: 34px;
+      img{
+        max-height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+/* NAV BAR */
+
+  .nav-bar{
+    list-style:none;
+    margin-bottom:10px;
+    margin-left:0;
+    float:left;
+    width:100%;
+    position:relative;
+    z-index:5;
+    li {
+      margin-right:10px;
+      position:relative;
+    }
+    a {
+      display:block;
+      padding:5px 5px 5px 0;
+      text-decoration:none;
+    }
+    ul {
+      background:#fff;
+      list-style:none;
+      margin:0;
+      position:absolute;
+      left:-9999px;
+      li{
+        padding-top:1px;
+        float:none;
+      }
+      a{
+        white-space:nowrap;
+      }
+    }
+  }
+
+@media only screen and (min-width: 40.063em) {
+    .nav-bar li{
+        float:left;
+        &:hover ul{
+          left:0;
+      }
+    }
+}
+
+/* MENUS */
+  .menu {
+    list-style: none;
+    margin-left: 0;
+  }
+
+
+/* TOP BAR + WP ADMIN BAR */
+  .fixed .top-bar {margin-bottom:0;}
+  .admin-bar .fixed .top-bar {margin-top:28px;}
+  /*.topbar-menu { padding-top: 45px; }*/
+  .topbar-menu #header h1 { margin-top: 10px; }
+
+  .header-widget-area {
+      padding-top: 28px;
+  }
+
+/* BREADCRUMBS */
+  .breadcrumbs {
+    padding-bottom:10px;
+    &.simple {
+      padding:0;
+      border:none;
+      background: none;
+      padding-top: 18px;
+      &:hover a,
+      a:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+/* KITCHEN SINK */
+  .kitchen-sink-nav {
+      list-style: none;
+      li {font-size: .8em;}
+  }
+
+/* ORBIT */
+  .orbit-bullets li {
+    cursor: pointer;
+    &.active { cursor:default; }
+  }

@@ -1,0 +1,20 @@
+#footer  {
+	font-size: 12px;
+	}
+
+#footer div.grafique-admin-branding  {
+	color: #777777;
+	padding: 3px 5px 3px 8px;
+	display: block;
+	width: 400px;
+	float: left;
+}
+
+#footer div.grafique-admin-branding a {
+	color: #777777;
+}
+
+#footer div.grafique-admin-branding a:hover {
+	color: #e85f09;
+	text-decoration: none;
+}
