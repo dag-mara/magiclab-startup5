@@ -149,6 +149,11 @@
 							'container'      => false,
 							'walker'         => new StartUp_Walker_TopBar()
 						) ); ?>
+					<div class="search-form-wrapper">
+						<?php 
+						echo do_shortcode('[searchform post_types="mlab_finished_series,mau_finished_project,mau_project"]');
+						?>
+					</div>
 				  </section>
 				</nav>
 			<?php
